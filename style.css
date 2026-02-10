@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Georgia, serif;
+  overflow-x: hidden;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px 20px;
+  background-color: white;
+}
+
+.logo {
+  width: 280px;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.bracket-text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.image-section {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 300px);
+}
+
+.full-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: calc(100vh - 300px);
+  max-width: none;
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.left-text {
+  font-size: 80px;
+  text-align: left;
+  margin: 60px 0;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+.right-text {
+  font-size: 80px;
+  text-align: right;
+  margin: 60px 0;
+  font-weight: normal;
+  padding-right: 20px;
+}
+
+.red-link {
+  color: #f40009;
+  text-decoration: none;
+  display: block;
+}
+
+.red-link:hover {
+  text-decoration: underline;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.shop-item {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.shop-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shop-item:hover {
+  transform: scale(1.05);
+}
+
+.page-title {
+  font-size: 60px;
+  text-align: center;
+  margin: 40px 0;
+  font-weight: normal;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin: 40px 0;
+  color: #f40009;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.back-link:visited {
+  color: #f40009;
+}
